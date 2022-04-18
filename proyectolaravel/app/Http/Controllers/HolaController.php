@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 class HolaController extends Controller
 {
     public function welcome() {
-        return view ('welcome');
+        $nombre = "Jose Juan";
+        return view ('welcome',compact('nombre'));
     }
 
     public function saludo($nombre){
